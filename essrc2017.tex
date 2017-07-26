@@ -3,10 +3,6 @@
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{latexsym}
 
-\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
-\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
-\def\|{\verb|}
-
 \setcounter{page}{1}
 
 \begin{document}
@@ -76,7 +72,40 @@ ESSロボットチャレンジの事前教育を表\ref{table:schedule}に示す
 
 %スプリングスクールは開発に必要な基礎知識を学ぶことを目的として実施している．
 具体的には，ソフトウェアとハードウェアの設計をロボット制御システムの開発を通して学ぶ．また，プロジェクトマネージメントに関する基礎知識を講義と実践で学べるよう，一週間のミニPBL課題にグループごとに取り組む．
-本年度は，昨年度も使用した「iRobotCreate2」というRoombaのプログラマブル教育用ロボットの他に，「Zumo」というキャタピラ式ロボットを導入し，二種類のロボット実践コースを設けた．iRobotCreate2を用いるスマートモバイルロボット競技のコースでは，主に大学院生を対象とし，ロボット制御の基礎演習だけではなく組込みシステム開発方法論に重点をおき課題を実践した．一方で，Zumoを用いるローバトライアル競技のコースでは，主に学部生を対象とし，ロボット開発環境，ロボットに搭載されているセンサーを利用した計測基礎など，組込みプログラミングが初めての学部生にも馴染みやすいように，実装中心の演習を行った．
+本年度は，昨年度も使用した「iRobotCreate2」というRoombaのプログラマブル教育用ロボットの他に，「Zumo」というキャタピラ式ロボットを導入し，二種類のロボット実践コースを設けた．iRobotCreate2を用いるスマートモバイルロボット競技のコースでは，主に大学院生を対象とし，ロボット制御の基礎演習だけではなく組込みシステム開発方法論に重点をおき課題を実践した．一方で，Zumoを用いるローバトライアル競技のコースでは，主に学部生を対象とし，ロボット開発環境，ロボットに搭載されているセンサーを利用した計測基礎など，組込みプログラミングが初めての学部生にも馴染みやすいように，実装中心の演習を行った．スプリングスクールのPBL課題として、コースごとに以下の課題を与えた．
+
+\begin{description}
+\item[(1)スマートモバイルロボット競技コース] 
+\end{description}
+　iRobot Create2で以下の項目を満たすよう走行することを課題とした．評価では，走行タイムを記録し，ベスト記録で争う競技とし，課題を実施したことを示す動画を提出させて，動作内容を判定した．
+\begin{itemize}
+\item iRobot Create2に半分水を入れた500mlペットボトルを乗せて，杭の外側を１周させる
+
+\item 500mlペットボトル及び杭を倒さないこと
+
+\item 他グループに負けないように，なるべく早くスタートエリアまで戻ること
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/create2.png}
+\caption{スマートモバイルロボット競技の課題} \label{fig:create2kadiai}
+\end{figure}
+
+\begin{description}
+\item[(2)ローバトライアル競技コース]
+\end{description}
+　Zumoの地磁気センサを使い，以下の項目で示すとおりZumoが常に北を向くように制御することを課題とした．
+評価では，動作の安定性，角度誤差，データ出力の形式などに施した工夫点などで判定した．
+\begin{itemize}
+\item step1⇒Zumoを板の上に載せる
+\item step2⇒スイッチを入れると，Zumoが北を向く
+\item step3⇒板を回転させると，Zumoは板の回転に逆らって向きを維持する
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8.5cm]{images/zumo.png}
+\caption{ローバトライアル競技の課題} \label{fig:zumokadai}
+\end{figure}
 
 参加学生数の都合により，同じ大学同士，あるいは，他大学との混成チームを編成したが，学生達はSNS等でコミューニケーションをとりながらミニ分散PBLを実施し，課題の成果をまとめることができた。
 全体の約半数の学生がスプリングスクールでの講義・演習内容に興味を持ち，より深く学びたいと感じており、ESSロボットチャレンジにつながるプレセミナーとしての役割を果たす内容であったと考える．
@@ -89,7 +118,7 @@ ESSロボットチャレンジの事前教育を表\ref{table:schedule}に示す
 \caption{2017年度スプリング・サマースクール実施スケジュール}
 \label{table:schedule}
 \centering
-\includegraphics[width=13cm]{images/schedule.pdf}
+\includegraphics[width=13cm]{images/springschooltable.pdf}
 \end{table*}
 
 \section{競技ルール}
@@ -106,10 +135,11 @@ ESSロボットチャレンジ2018では，相撲型ロボットを用いたロ�
 \end{itemize}
 に取り組む．
 
-\begin{figure}[b]
+\begin{figure}[bt]
 \centering
-\includegraphics[width=6cm]{images/zumo.jpg}
-\caption{Zumo} \label{fig:zumo}
+\includegraphics[width=6cm]{images/zumo.pdf}
+\caption{Zumo} 
+\label{fig:zumo}
 \end{figure}
 
 \subsubsection{コンパルソリ課題}
@@ -144,6 +174,7 @@ ESSロボットチャレンジ2018では，相撲型ロボットを用いたロ�
 \item 課題に要した時間（リトライを含む），ライントレースの精度
 \item 課題に要した時間（リトライを含む），マーカの種類と位置誤差
 \end{enumerate}
+
 
 \subsubsection{自動運転課題}
 \paragraph*{概要}
@@ -205,7 +236,7 @@ PCBアーム長 & 105mm\\
 ※機体重量は基板厚/コネクタタイプ/バッテリ容量で変動
 \end{table}
 
-\begin{figure}[htb]
+\begin{figure}[tb]
 \centering
 \includegraphics[width=6.5cm]{images/mqcx.jpg}
 \caption{MQCX外観} \label{fig:mqcx}
