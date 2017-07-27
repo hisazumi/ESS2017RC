@@ -2,6 +2,7 @@
 
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{latexsym}
+\usepackage{url}
 
 \setcounter{page}{1}
 
@@ -24,6 +25,7 @@
 \author{中村 啓之}{Hiroyuki Nakamura}{Kyushu}
 \author{渡辺 晴美}{Harumi Watanabe}{Tokai}
 \author{三輪 昌史}{Masafumi Miwa}{Tokushima}
+\author{細合 晋太郎}{Shintaro Hosoai}{ChangeVision}
 \author{久保秋 真}{Shin Kuboaki}{ChangeVision}
 \author{小倉 信彦}{Nobuhiko Ogura}{TokyoToshi}
 \author{元木 誠}{Makoto Motoki}{Kanto}
@@ -51,11 +53,11 @@ Education, Smart Mobile Robot, Multicopter
 
 \section{はじめに}
 
-ESSロボットチャレンジは，組込みシステムシンポジウムの特別企画として開催するロボットコンテストである．シンポジウム名が組込みソフトウェアシンポジウムであった頃から継続して実施しており2017年度で14回目となる．
+ESSロボットチャレンジは，組込みシステムシンポジウムの特別企画として開催するロボットコンテストである．シンポジウム名が組込みソフトウェアシンポジウムであった頃から継続して実施しており2017年度で14回目でありる．
 
-11回目の2014年度に過去10年（10回）を振り返るイベントを実施し\cite{essrc2014}，前回の2015年度は未来を考えるために「スマートロボットの実現に向けて〜ソフトウェア・ハードウェアの課題を探る〜」と題したパネルディスカッションを実施し，学会で開催することの意義が，単なるものづくりに留まらず，若手の研究者および技術者の育成，さらに新しい技術へのチャレンジを目指すことを強調できることにあることを確認した\cite{essrc2015}．また，文献\cite{watanabe2016pbl}にもあるように，2016年度で13回目を迎える本チャレンジは，コンテスト型PBL(Project Based Learning)であり， (1) 分野を超えた学びの場　(2) 実践的開発経験 (3) コミュニティの形成，に貢献してきたといえる．
+11回目の2014年度に過去10年（10回）を振り返るイベントを実施し\cite{essrc2014}，2015年度は未来を考えるために「スマートロボットの実現に向けて〜ソフトウェア・ハードウェアの課題を探る〜」と題したパネルディスカッションを実施し，学会で開催することの意義が，単なるものづくりに留まらず，若手の研究者および技術者の育成，さらに新しい技術へのチャレンジを目指すことを強調できることにあることを確認した\cite{essrc2015}．また，文献\cite{watanabe2016pbl}にもあるように，本チャレンジは，コンテスト型PBL(Project Based Learning)であり， (1) 分野を超えた学びの場　(2) 実践的開発経験 (3) コミュニティの形成，に貢献してきたといえる．
 
-本チャレンジは，2013年度より文部科学省「分野・地域を越えた実践的情報教育協働ネットワーク組込みシステム分野連合型PBL(enPiT-Emb/PEARL)」と共催している\cite{enpitweb}\cite{essrcweb}．さらに2017年度から，文部科学省「成長分野を支える情報技術人材の育成拠点の形成(enPiT2)」と協力して実施し，学部生むけ教育との連携を図っている．本連携により，充実した教育環境の提供が可能となり，ロボットチャレンジの成果を研究と結びつけること，大学を超えた学生間の連携を深めることが容易になった．コンテストに先立ち実施するスプリングスクール，サマースクールでは，ロボット開発に必要な知識に加え，学生間で集う場を提供することで，学生間の連携を深めている．
+本チャレンジは，2013年度より文部科学省「分野・地域を越えた実践的情報教育協働ネットワーク組込みシステム分野連合型PBL(enPiT-Emb/PEARL)」と共催している\cite{enpitweb}\cite{essrcweb}．さらに2017年度から，文部科学省「成長分野を支える情報技術人材の育成拠点の形成(enPiT2)」と協力して実施し，学部生向け教育との連携を図っている\cite{enpit2web}．本連携により，充実した教育環境の提供が可能となり，ロボットチャレンジの成果を研究と結びつけること，大学を超えた学生間の連携を深めることが容易になった．コンテストに先立ち実施するスプリングスクール，サマースクールでは，ロボット開発に必要な知識に加え，学生間で集う場を提供することで，学生間の連携を深めている．
 
 また，本チャレンジは2011年度までは小型屋内用飛行船，2012年からは掃除機ロボットを対象としてきたが，2016年度は飛行ドローンを対象としたマルチコプタ競技を加えた．2017年からは掃除機ロボットを発展させたローバー競技を加えている．
 
@@ -151,8 +153,8 @@ ESSロボットチャレンジ2017では，相撲型ロボットを用いたロ�
 
 \begin{figure}[bt]
 \centering
-\vspace{3.5cm}
-\includegraphics[width=5cm]{images/zumo.jpg}
+\vspace{3cm}
+\includegraphics[width=4cm]{images/zumo.jpg}
 \caption{Zumo} 
 \label{fig:zumo}
 \end{figure}
@@ -253,7 +255,7 @@ PCBアーム長 & 105mm\\
 
 \begin{figure}[tb]
 \centering
-\includegraphics[width=6.5cm]{images/mqcx.jpg}
+\includegraphics[width=6cm]{images/mqcx.jpg}
 \caption{MQCX外観} \label{fig:mqcx}
 \end{figure}
 
@@ -289,7 +291,7 @@ PCBアーム長 & 105mm\\
 
 また，スプリングスクールとサマースクールを通し，分野・領域が異なる様々な大学・分野の学生達に，共通の知識および問題意識を持たせることができた．特に，サマースクールでは，その共通意識を備えつつ，国内の代表的な研究者研究の講演を通し，研究へ取り組む姿勢が感じ取れるようなカリキュラムとした．その成果は，サマースクールの学生企画の内容，学生の反応から伺うことができ，学生達にとって研究に取り組む姿勢に対して刺激になったと感じている．本シンポジウムのポスターセッション等でその成果が発揮されることであろう．
 
-13年目を迎えたロボットチャレンジを通して，所属機関を越えた教員間，学生間，あるいは学生と教員間の交流が活性化することを期待する．
+14年目を迎えたロボットチャレンジを通して，所属機関を越えた教員間，学生間，あるいは学生と教員間の交流が活性化することを期待する．
 
 今後は，高等教育機関に対するPBL教材や教員の育成プログラムの提供など，国内学会として役割を担っていくとともに，本チャレンジから学会開催に相応しい新しい技術が創出されることを期待したい．
 
@@ -302,14 +304,16 @@ PCBアーム長 & 105mm\\
 
 \bibitem{watanabe2016pbl} 渡辺晴美, 三輪昌史, 元木　誠, 小倉信彦, 久保秋　真, 細合晋太郎, 菅谷みどり, 久住憲嗣: 学会実施のコンテスト型PBLによる組込みシステム教育, 日本工学教育協会工学教育, Vol.64, No.3, pp.41--46, 2016.
 
-\bibitem{enpitweb} enPiT-Emb/PEARLホームページ, \urlj{http://www.qito.kyushu-u.ac.jp/project/pearl} (2016.9.15).
+\bibitem{enpitweb} enPiT-Emb/PEARLホームページ, \url{http://www.qito.kyushu-u.ac.jp/project/pearl} (2017.7.27).
 
-\bibitem{essrcweb} ESSロボットチャレンジホームページ, \urlj{http://www.qito.kyushu-u.ac.jp/ess/} (2016.9.15).
+\bibitem{essrcweb} ESSロボットチャレンジホームページ, \url{http://www.qito.kyushu-u.ac.jp/ess/} (2017.7.27).
+
+\bibitem{enpit2web} enPiT2ホームページ, \url{http://www.enpit.jp/} (2017.7.27).
 
 \bibitem{mqcx}
 魔法の大鍋: マルチコプタ(online),
-\urlj{http://blog.eldhrimnir.com/wordpress/?page\_id=3749}
-(2016.9.15).
+\url{http://blog.eldhrimnir.com/wordpress/?page\_id=3749}
+(2017.7.27).
 
 \end{thebibliography}
 
